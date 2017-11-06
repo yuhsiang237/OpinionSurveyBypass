@@ -1,8 +1,8 @@
 javascript:(function () {
 
   var f1 = window.frames[0];
-  f2 = f1.window.frames[1];
-  f3 = f2.frames[1];
+  var f2 = f1.window.frames[1];
+  var f3 = f2.frames[1];
 
   var text = f3.document.getElementsByTagName("body")[0].innerHTML;
   var regex = /id.*?(rdBtn.*?Y)"/g;
